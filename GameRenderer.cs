@@ -30,6 +30,8 @@ public unsafe class GameRenderer
         _camera = new Camera(windowSize.Width, windowSize.Height);
     }
 
+    public Sdl? Sdl { get; set; }
+
     public void SetWorldBounds(Rectangle<int> bounds)
     {
         _camera.SetWorldBounds(bounds);
